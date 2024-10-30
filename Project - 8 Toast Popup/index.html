@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="https://www.linkedin.com/in/rohanrana33042/">Linkedin</a>
+      <h1>Toast Popup</h1>
+      <a href="https://github.com/Rohanrana2003">Github</a>
+    </nav>
+
+    <div class="content">
+
+      <select id="leftright">
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+      </select>
+
+      <select id="topbottom">
+        <option value="top">Top</option>
+        <option value="bottom">Bottom</option>
+      </select>
+
+      <select id="info">
+        <option value="warning">Warning</option>
+        <option value="success">Success</option>
+        <option value="info">Info</option>
+      </select>
+
+      <input id="toastMsg" type="text" value="This is a toast message" />
+
+      <div class="range">
+        <p>Duration</p>
+        <input id="range" type="range" value="70" />
+      </div>
+
+      <button class="" id="btn">Show Toast</button>
+    </div>
+
+    <div class="toastContainer">
+        <p id="msg"></p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

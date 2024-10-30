@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee DataBase</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="popup">
+
+      <p>Add a new Employee</p>
+      <form action="">
+
+        <div>
+          <input type="text" id="formFirstName"   placeholder="First Name" required/>
+          <input type="text" id="formLastName"    placeholder="Last Name"  required/>
+        </div>
+
+        <input class="in"  type="url"    id="formImage"     placeholder="Image URL (optional)"
+            value="https://cdn-icons-png.flaticon.com/512/0/93.png" />
+
+        <input class="in"  type="email"  id="formEmail"     placeholder="Email"      required />
+        <input class="in"  type="text"   id="formContact"   placeholder="Contact No" required />
+        <input class="in"  type="text"   id="formAddress"   placeholder="Address"    required />
+        <input class="in"  type="date"   id="formDob"       max="2005-01-01"         required/>
+        
+        <button class="submit" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <nav class="navbar">
+      <h1>Employee DataBase Management</h1>
+      <button id="add">Add Employee</button>
+    </nav>
+
+    <div class="container">
+
+      <div class="list">
+
+        <p class="head">Employee List</p>
+
+        <div class="items">
+          <ul id="un"></ul>
+        </div>
+      </div>
+
+      <div class="info">
+
+        <p class="head">Employee Information</p>
+
+        <div class="details">
+          <img id="img" />
+          <h1 id="h1"> </h1>
+          <p id="address"></p>
+          <p id="email"></p>
+          <p id="mobile"></p>
+          <p id="dob"></p>
+        </div>
+
+      </div>
+      
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

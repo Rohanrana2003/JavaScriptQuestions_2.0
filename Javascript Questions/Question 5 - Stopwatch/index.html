@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CountDown</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div id="center">
+
+      <h1>Countdown Timer</h1>
+
+        <div class="time">
+
+          <div class="hour common">
+            <p>Hour</p>
+            <span><input id="hour" placeholder="00" maxlength='2' oninput="this.value = this.value.slice()" type="text"></span>
+          </div>
+
+          <div class="minutes common">
+            <p>Minutes</p>
+            <span>: <input id="min" placeholder="00" maxlength='2' oninput="this.value = this.value.slice()" type="text"></span>
+          </div>
+
+          <div class="seconds common">
+            <p>Seconds</p>
+            <span>: <input id="sec" placeholder="00" maxlength='2' oninput="this.value = this.value.slice()" type="text"></span>
+          </div>
+
+      </div>
+
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

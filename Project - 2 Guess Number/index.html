@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <p>Home</p>
+        <h1>Counter</h1>
+        <a href="/">Github</a>
+    </nav>
+
+    <div class="content">
+
+        <p>Enter a guess between 0 to 100</p>
+        <input id="input" type="number" max="100" min="0" placeholder="Enter a Number">
+
+        <div class="btn">
+            <button id="submit" disabled>Submit</button>
+            <button id="start">Start Game</button>
+        </div>
+
+        <div class="results">
+            <p id="result"></p>
+        </div>
+
+        <div class="guesses">
+            <p id="guess"> </p>
+        </div>
+      
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
